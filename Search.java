@@ -6,6 +6,7 @@ Class Search
        /*Menu Driven Program*/ 
        
        int i ;
+       int arr[]={1,7,8,12,17,56,65};
        do
        {
         System.out.println("01. Linear Search");
@@ -14,8 +15,8 @@ Class Search
         i=/*Input from user*/ 
             Switch(i)
             {
-                case 1:LinearSearch(); break;
-                case 2:BinarySearch(); break;
+                case 1:LinearSearch(arr,65); break;
+                case 2:System.out.println(BinarySearch(arr,0,arr.length,56)); break;
                 case 0:i=0; break;
             }
        }while (i==0);
